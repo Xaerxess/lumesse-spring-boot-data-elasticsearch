@@ -1,394 +1,324 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>Spring Boot & co.</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="Mokka knowledge sharing">
+    <meta name="author" content="Grzegorz Rożniecki (Xaerxess)">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
       }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+    </script>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+  <body>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+    <div class="reveal">
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+      <div class="slides">
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+        <section id="start">
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+          <section>
+            <h1><strong>Spring Boot & co.</strong></h1>
+            <img src="images/logo_spring.png" alt="Spring logo" />
+          </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+        </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+        <section id="overview">
 
-			</div>
+          <section id="what_is_spring">
+            <h2>Spring?</h2>
+            <img src="images/spring.jpg" alt="Yes, spring." />
+          </section>
 
-		</div>
+          <section id="ask_wiki">
+            <blockquote>
+              <p>The Spring Framework is an <strong>application framework and inversion of control container</strong> for the Java platform. (...)</p>
+              <p class="fragment"> The framework's core features can be used by <strong>any</strong> Java application, but there are extensions for building web applications on top of the Java EE platform.</p>
+            </blockquote>
+          </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+          <section id="spring_modules" class="a-bit-smaller" data-markdown>
+            Spring Framework Modules
+            ------------------------
 
-		<script>
+            - **Spring Core Container**: This is the base module of Spring and provides spring containers (BeanFactory and ApplicationContext).[9]
+            - **Aspect-oriented programming**: enables implementing cross-cutting concerns.
+            - **Authentication and authorization**: configurable security processes that support a range of standards, protocols, tools and practices via the Spring Security sub-project (formerly Acegi Security System for Spring).
+            - **Convention over configuration**: a rapid application development solution for Spring-based enterprise applications is offered in the Spring Roo module
+            - **Data access**: working with relational database management systems on the Java platform using JDBC and object-relational mapping tools and with NoSQL databases
+            - **Inversion of control container**: configuration of application components and lifecycle management of Java objects, done mainly via dependency injection
+          </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+          <section id="spring_modules_cont" class="a-bit-smaller" data-markdown>
+            Modules (contd.)
+            ----------------
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+            - **Messaging**: configurative registration of message listener objects for transparent message-consumption from message queues via JMS, improvement of message sending over standard JMS APIs
+            - **Model–view–controller**: an HTTP- and servlet-based framework providing hooks for extension and customization for web applications and RESTful Web services.
+            - **Remote access framework**: configurative RPC-style marshalling of Java objects over networks supporting RMI, CORBA and HTTP-based protocols including Web services (SOAP)
+            - **Transaction management**: unifies several transaction management APIs and coordinates transactions for Java objects
+            - **Remote management**: configurative exposure and management of Java objects for local or remote configuration via JMX
+            - **Testing**: support classes for writing unit tests and integration tests
+          </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+          <section id="spring_io_projects" class="a-bit-smaller">
+            <div data-markdown>
+            [spring.io projects](https://spring.io/projects)
+            ================================================
+            </div>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+            <img src="images/spring_io_projects.png" class="small" alt="Spring.io" />
+          </section>
 
-		</script>
+        </section>
 
-	</body>
+        <section>
+
+          <!-- <section id="some_spring_history">
+            <h2>A bit of history</h2>
+            <div data-markdown>
+              - 2003 - Spring 1.0 released _(as an alternative to EJB)_
+              - ...
+              - December 2009 - [Spring Roo](http://projects.spring.io/spring-roo/) 1.0 released
+              - December 2013 - Spring 4.0 released (Java 6+, Servlet 2.5+, support for Java 8)
+            </div>
+
+            <aside class="notes" data-markdown>
+            </aside>
+          </section> -->
+
+          <section id="spring_conventions">
+            <h2>Conventions?</h2>
+
+            <p><a href="http://programmers.stackexchange.com/questions/92393/what-does-the-spring-framework-do-should-i-use-it-why-or-why-not">What does the Spring framework do? Should I use it? Why or why not?</a></p>
+
+            <div class="fragment" data-markdown>
+              - [SimpleBeanFactoryAwareAspectInstanceFactory](http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/aop/config/SimpleBeanFactoryAwareAspectInstanceFactory.html)
+              - [AbstractSingletonProxyFactoryBean](http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html)
+            </div>
+          </section>
+
+          <section id="convention_over_configuration_maven">
+            <h2>Convention...n</h2>
+
+            <img src="images/maven_coc.png" alt="Maven CoC" />
+          </section>
+
+          <section id="convention_over_configuration">
+            <h2>Convention over configuration</h2>
+
+            <p>A software design paradigm which seeks to <strong>decrease the number of decisions</strong> that developers need to make, <strong>gaining simplicity</strong>, and <strong>not necessarily losing flexibility</strong>.</p>
+          </section>
+
+          <section id="roo_ask_wiki">
+            <h2>Spring Roo</h2>
+
+            <p>Spring Roo provides an alternative, <span class="fragment highlight-red" data-fragment-index="2">code-generation</span> based approach at using <span class="fragment grow" data-fragment-index="1">convention-over-configuration</span> to rapidly build applications in Java. (...) It focuses on:</p>
+
+            <div class="fragment a-bit-smaller" data-markdown>
+              - Extensibility (via add-ons)
+              - Java platform productivity (as opposed to other languages)
+              - Lock-in avoidance (Roo can be removed within a few minutes from any application)
+              - Runtime avoidance (with associated deployment advantages)
+              - Usability (particularly via the shell features and usage patterns)
+            </div>
+          </section>
+
+          <section id="boot_ask_wiki">
+            <h2><a href="http://projects.spring.io/spring-boot/">Spring Boot</a></h2>
+
+            <p>Spring Boot is Spring's <span class="fragment grow" data-fragment-index="1">convention-over-configuration</span> solution for creating stand-alone, production-grade Spring based Applications that you can <span class="fragment highlight-green" data-fragment-index="2">"just run"</span>. It takes an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss.</p>
+
+            <div class="fragment a-bit-smaller" data-markdown>
+              - Create stand-alone Spring applications
+              - Embed Tomcat or Jetty directly (no need to deploy WAR files)
+              - Provide opinionated 'starter' POMs to simplify your Maven configuration
+              - Automatically configure Spring whenever possible
+              - Provide production-ready features such as metrics, health checks and externalized configuration
+              - Absolutely no code generation and no requirement for XML configuration
+            </div>
+          </section>
+
+          <section id="some_resources" data-markdown>
+            Some useful resources
+            ---------------------
+
+            - [Quick Start](http://projects.spring.io/spring-boot/#quick-start)
+            - [Reference Guide](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+            - [API](http://docs.spring.io/spring-boot/docs/current/api/)
+            - [Spring Boot – Simplifying Spring for Everyone](https://spring.io/blog/2013/08/06/spring-boot-simplifying-spring-for-everyone)
+          </section>
+
+        </section>
+
+        <section id="sping_boot_101">
+
+          <section id="components" data-markdown>
+            Key components
+            --------------
+
+            - Spring Boot Starter(s)
+            - Spring Boot AutoConfigure
+            - Spring Boot CLI
+            - Spring Boot Actuator
+          </section>
+
+          <section id="starter" data-markdown>
+            [Spring Boot Starters](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters)
+            -------------------------------------------------------------------------------------------------------
+
+            > Spring Boot Starters are a **set of convenient dependency descriptors that you can include in your application**. (...) For example, if you want to get started using Spring and JPA for database access just include the `spring-boot-starter-data-jpa` dependency in your project, and you are good to go.
+          </section>
+
+          <section id="autoconfigure" data-markdown>
+            [Spring Boot Autoconfigure](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-first-application-auto-configuration)
+            -------------------------------------------------------------------------------------------------------------------------
+
+            - [List of features](https://github.com/spring-projects/spring-boot/blob/master/spring-boot-autoconfigure/pom.xml)
+            - Ex. [Spring Data Elasticsearch auto configuration](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/elasticsearch)
+          </section>
+
+          <section id="cli">
+            <h2><a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cli">Spring Boot CLI</a>
+
+            <pre><code class="a-bit-smaller" data-trim>
+$ spring help run
+spring run - Run a spring groovy script
+
+usage: spring run [options] &lt;files&gt; [--] [args]
+
+Option                     Description
+------                     -----------
+--autoconfigure [Boolean]  Add autoconfigure compiler
+                             transformations (default: true)
+--classpath, -cp           Additional classpath entries
+-e, --edit                 Open the file with the default system
+                             editor
+--no-guess-dependencies    Do not attempt to guess dependencies
+--no-guess-imports         Do not attempt to guess imports
+-q, --quiet                Quiet logging
+-v, --verbose              Verbose logging of dependency
+                             resolution
+--watch                    Watch the specified file for changes
+            </code></pre>
+
+          </section>
+
+          <section id="actuator">
+            <h2><a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready">Spring Actuator</a></h2>
+            <img src="images/actuator.png" class="small" alt="Actuator admin panel" />
+          </section>
+
+        </section>
+
+        <section id="search_for_tomorrow">
+
+          <section id="data" data-markdown>
+            Enter some data!
+            ---------------
+
+            - [Spring Data](http://projects.spring.io/spring-data/)
+            - [Spring Data Elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch)
+            - [Spring Boot Data Elasticsearch](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-nosql.html#boot-features-elasticsearch)
+          </section>
+
+          <section id="sft" data-markdown>
+            [Search For Tomorrow](http://repo.lumesse.local/projects/TEAM/repos/search-for-tomorrow/browse)
+            -----------------------------------------------------------------------------------------------
+
+            ![SFT](images/Search_for_Tomorrow.jpg)
+          </section>
+
+          <section id="eclipse" data-markdown>
+            _(Eclipse session)_
+          </section>
+
+        </section>
+
+        <!-- <section>
+
+          <section id="summary">
+            <h2>Summary</h2>
+            <ul>
+              <li class="fragment"></li>
+              <li class="fragment"></li>
+              <li class="fragment"></li>
+            </ul>
+          </section>
+
+        </section> -->
+
+        <section id="the_end">
+          <h1 class="fragment" data-fragment-index="1">THE END</h1>
+          <h3>Questions?</h3>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
